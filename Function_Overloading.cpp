@@ -1,10 +1,11 @@
 /* Function overloading is a powerful feature of C++ which is used to implement polymorphism. 
    One Function can be processed in more than one way.
-   one interface multiple methods 
+   one interface multiple methods .
+ 
 */
 #include<iostream>
 using namespace std;
-void Area(float side);	//function overloading to implement polymorphism
+void Area(float side);	//function overloading to implement  compile-time polymorphism
 void Area(float length,float breadth); // functions are differentiable by their signature
 int main()
 {
