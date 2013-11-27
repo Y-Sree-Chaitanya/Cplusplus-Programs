@@ -1,3 +1,4 @@
+/* This program demostrates basic syntax to overload +,-,<< operators */
 #include<iostream>
 #define maxsize 15
 using namespace std;
@@ -27,6 +28,7 @@ class STACK
 				return *this;			
 			}
 			cout<<"\n Element being deleted is : "<<s[top--];
+			return *this;
 		}
 		friend ostream& operator<<(ostream& out,STACK &S)
 		{
