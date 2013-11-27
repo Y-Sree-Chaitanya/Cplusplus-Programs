@@ -10,7 +10,7 @@ class STACK
 		{
 			top=-1;
 		}
-		STACK operator+(int ele)
+		STACK operator+(int ele) //overloading binary +
 		{
 			if(top==maxsize-1)
 			{
@@ -20,7 +20,7 @@ class STACK
 			s[++top]=ele;
 			return *this;
 		}
-		STACK operator-()
+		STACK operator-() /* Overloading unary -*/
 		{
 			if(top==-1)
 			{
