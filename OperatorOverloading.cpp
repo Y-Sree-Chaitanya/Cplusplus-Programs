@@ -20,7 +20,7 @@ class STACK
 			s[++top]=ele;
 			return *this;
 		}
-		STACK operator-() /* Overloading unary -*/
+		void operator-() /* Overloading unary -*/
 		{
 			if(top==-1)
 			{
@@ -28,7 +28,7 @@ class STACK
 				return *this;			
 			}
 			cout<<"\n Element being deleted is : "<<s[top--];
-			return *this;
+		
 		}
 		friend ostream& operator<<(ostream& out,STACK &S)
 		{
@@ -62,7 +62,7 @@ int main()
 				 cin>>ele;
 				 S=S+ele;
 				 break;
-			case 2 : S=-S;
+			case 2 : -S;
 				 break;
 			case 3 : cout<<S;
 				  break;
